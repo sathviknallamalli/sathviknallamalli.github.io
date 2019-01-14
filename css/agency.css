@@ -9,6 +9,8 @@ body {
   font-family: 'Roboto Slab', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
+
+
 .preload{
   width: 100%;
   height: 100%;
@@ -34,6 +36,16 @@ body {
   margin: auto;
   position: relative;
 }
+
+
+
+
+
+
+
+
+
+
 .loader1, .loader{
   position: absolute;
   border: 5px solid transparent;
