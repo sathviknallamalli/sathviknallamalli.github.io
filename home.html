@@ -339,7 +339,6 @@
 
   </section>
 
-  <!-- About -->
 
 
   <!-- Team -->
@@ -348,6 +347,10 @@
       <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
+          <h3 class="section-subheading" style="
+              margin-top: 30px;
+              margin-bottom: 50px;
+          ">Check out some of our head employee's profiles and listen to what they have to say about working at Accuracy</h3>
         </div>
       </div>
       <div class="row">
@@ -374,6 +377,18 @@
               </li>
             </ul>
           </div>
+
+          <!--AUDIO-->
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 text-center">
+                <audio controls>
+                  <source src="audio\clip2.mp3" type="audio/mpeg">
+              </div>
+            </div>
+          </div>
+
+
         </div>
         <div class="col-sm-4">
           <div class="team-member">
@@ -399,6 +414,17 @@
               </li>
             </ul>
           </div>
+
+          <!--AUDIO-->
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 text-center">
+                <audio controls>
+                  <source src="audio\clip1.mp3" type="audio/mpeg">
+              </div>
+            </div>
+          </div>
+
         </div>
         <div class="col-sm-4">
           <div class="team-member">
@@ -423,13 +449,25 @@
               </li>
             </ul>
           </div>
+
+          <!--AUDIO-->
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 text-center">
+                <audio controls>
+                  <source src="audio\clip3.mp3" type="audio/mpeg">
+              </div>
+            </div>
+          </div>
+
+
         </div>
       </div>
 
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h3 class="section-subheading text-muted">More of our staff can be found by clicking here</h3>
+            <h3 class="section-subheading text-muted" style="padding-top: 25px">More of our staff can be found by clicking here</h3>
             <a class="btn btn-primary btn-xl js-scroll-trigger" href="https://www.aicpa.org/career/careerpaths/publicaccounting.html" align="center">Career opportunities</a>
           </div>
         </div>
@@ -459,7 +497,7 @@
 
       <div class="row">
         <div class="col-lg-12">
-          <form action="https://formspree.io/sathviknallamalli@gmail.com" method="POST">
+          <form action="https://formspree.io/accuracyouting@gmail.com" method="POST">
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group">
@@ -489,8 +527,7 @@
 
               <div class="col-lg-12 text-center">
                 <div class="form-group">
-                  <input type="submit" value="Send">
-                  <p class="help-block text-danger"></p>
+                  <input type="submit" class="btn btn-primary btn-xl" value="Send message">
                 </div>
               </div>
             </div>
@@ -515,14 +552,74 @@
 
 
   <!-- Calendar -->
-  <section id="contact" style="
+  <section id="schedule" style="
   padding-bottom: 20px;">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading text-uppercase">Schedule</h2>
           <h3 class="section-subheading text-muted">To begin getting help and working with an agent,
-            view the schedule of appointments for each department and schedule a booking for your desire of service</h3>
+            view the schedule of appointments for each department and schedule a booking for your desire of service.
+            Below, enter your information and preferred schedule date.</h3>
+        </div>
+      </div>
+
+
+
+      <div class="row">
+        <div class="col-lg-12">
+          <form action="https://formspree.io/accuracyouting@gmail.com" method="POST">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input class="form-control" id="name" type="text" placeholder="Your Name *" required="required" data-validation-required-message="Please enter your name.">
+                  <p class="help-block text-danger"></p>
+                </div>
+                <div class="form-group">
+                  <input class="form-control" id="email" type="email" placeholder="Your Email *" required="required" data-validation-required-message="Please enter your email address.">
+                  <p class="help-block text-danger"></p>
+                </div>
+                <div class="form-group">
+                  <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" required="required" data-validation-required-message="Please enter your phone number.">
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="form-group">
+                <input class="form-control" id="date" type="date" placeholder="Your Phone *" required="required" data-validation-required-message="Please enter your phone number.">
+                <p class="help-block text-danger"></p>
+              </div>
+              <div class="form-group">
+                <input class="form-control" id="starttime" type="time" placeholder="Your Phone *" required="required" data-validation-required-message="Please enter your phone number.">
+                <p class="help-block text-danger"></p>
+              </div>
+              <div class="form-group">
+                <input class="form-control" id="endtime" type="time" placeholder="Your Phone *" required="required" data-validation-required-message="Please enter your phone number.">
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+
+
+
+
+            <div class="clearfix"></div>
+
+
+            <div class="col-lg-12 text-center">
+              <div class="form-group">
+                <input type="submit" class="btn btn-primary btn-xl" value="Send">
+              </div>
+            </div>
+
+        </div>
+        </form>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h3 class="section-subheading text-muted">You can view the calendar of appointments
+              and view the economic and accounting calendar for deadlines.</h3>
+          </div>
         </div>
       </div>
 
@@ -530,7 +627,9 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 300px;">Schedule meeting</a>
+    width: 300px;">View calendar</a>
+
+    </div>
 
 
     </div>
