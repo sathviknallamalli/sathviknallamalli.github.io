@@ -9,32 +9,19 @@
 
   <div id="login_div" class="main-div" style="margin-top: 30px">
 
-    <h1 align="center" style="margin-bottom: 10px; font-size: 45px">Log In</h1>
+    <h1 align="center" style="margin-bottom: 20px; font-size: 45px">Sign up</h1>
 
-    <a align="center" style="text-decoration:none; color: black" href="signup.html">Dont have an account? Sign up here</a>
 
-    <button align="center" class="lightgray-btn rightbuttons" onclick="facebook_login()" style="background: #3B5998;
-     margin-bottom: 20px;
-     margin-top: 20px;">
-      <img class="btnimg" src="facebook.png" alt="" style="
-    width: 27px;
-    height: 28px;
-" />Continue with Facebook
-    </button>
+<a align="center" style="text-decoration:none; color: black" href="login.html">Already a member? You log in here</a>
+    <input align="center"
+    style="margin-top: 20px" type="email" placeholder="email...." id="email_field" />
+    <input align="center" type="password" placeholder="pasword...." id="password_field" />
 
-    <button class="lightgray-btn rightbuttons" onclick="gmail_login()" style="background: #5d8ffc; margin-bottom: 20px">
-      <img class="btnimg" src="google.png" alt="" />
-      Continue with Google
-    </button>
 
-    <h4 align="center">or</h4>
 
-    <button class="lightgray-btn rightbuttons" href="withemail.html" style="background: white;
- margin-bottom: 20px;
- color: black">
+    <button align="center" style="margin-top: 20px"onclick="create_account()">Create Account</button>
 
-      <a style="color: black; text-decoration:none" href="withemail.html" class="button">Log in with Email</a>
-    </button>
+
 
 
 
@@ -62,6 +49,8 @@
     firebase.initializeApp(config);
   </script>
   <script src="index.js"></script>
+
+
 </head>
 
 

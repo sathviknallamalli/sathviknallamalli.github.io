@@ -67,6 +67,7 @@ function create_account() {
 
     // ...
   });
+
 }
 
 function logout() {
