@@ -13,11 +13,7 @@ firebase.auth().onAuthStateChanged(function(user) {
       var email_id = user.email;
       var email_verified = user.emailVerified;
 
-      if (email_verified) {
-        document.getElementById("verify_btn").style.display = "none"
-      } else {
-        document.getElementById("verify_btn").style.display = "block"
-      }
+
 
 
 
@@ -58,7 +54,11 @@ function create_account() {
   var userEmail = document.getElementById("email_field").value;
   var userPass = document.getElementById("password_field").value;
 
-  firebase.auth().createUserWithEmailAndPassword(userEmail, userPass).catch(function(error) {
+  firebase.auth().createUserWithEmailAndPassword(userEmail, userPass).then(function(result){
+
+    send_verification();
+
+  }).catch(function(error) {
     // Handle Errors here.
     var errorCode = error.code;
     var errorMessage = error.message;
@@ -79,7 +79,7 @@ function send_verification() {
 
   user.sendEmailVerification().then(function() {
     // Email sent.
-    window.alert("email sent");
+    window.alert("Verification email sent! Please check the email associated with this account");
   }).catch(function(error) {
     // An error happened.
     window.alert("email error + " + error.message);
@@ -133,5 +133,16 @@ function facebook_login() {
   // ...
 
   window.alert("error message " + errorMessage);
+});
+}
+
+function forgot_password(){
+  var auth = firebase.auth();
+var userEmail = document.getElementById("recovery_email").value;
+
+auth.sendPasswordResetEmail(userEmail).then(function() {
+  window.alert("Email sent! Please check for reset instructions");
+}).catch(function(error) {
+  window.alert(error.message + "");
 });
 }
