@@ -9,8 +9,13 @@
   <title>Accuracy Accounting</title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/style.css">
+
+
+
 </head>
 <bodyother>
+
+
   <div class="cs-loader">
     <div class="cs-loader-inner" style="
       padding-left: 500px;
@@ -30,6 +35,8 @@
     </div>
   </div>
 
+
+
   <div class="container" style="padding-left: 500px">
     <div class="row">
       <div class="col-lg-12 text-center">
@@ -37,18 +44,18 @@
         <!--FLASH ANIMATION-->
 
 
-                <OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" align="center" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" WIDTH="320" HEIGHT="240" id="magicball" ALIGN="">
-                  <PARAM NAME=movie VALUE="magicball.swf">
-                  <PARAM NAME=quality VALUE=high>
-                  <PARAM NAME=bgcolor VALUE=white> <EMBED src="magicball.swf" align="center" style="align=center; padding-left: 15px; padding-top: 30px"
-                    quality=high bgcolor=white  height= 360; width= 373 id="magicball" NAME="magicball" ALIGN="" TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer"></EMBED>
-                </OBJECT>
 
 
 
-    <embed src="magicball.swf">
+        <embed id="mymovie" src="magicball.swf" style="align=center; padding-left: 15px; padding-top: 30px" height=360; width=373>
 
-
+        <script type="text/javascript">
+          video = document.getElementById('mymovie');
+          video.addEventListener('ended', function() {
+            alert('video is ended');
+            window.location.href = 'http://www.google.com';
+          })
+        </script>
 
       </div>
     </div>
