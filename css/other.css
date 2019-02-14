@@ -11,6 +11,19 @@ input, button {
   font-weight: 700;
 }
 
+button {
+  position: relative;
+  padding: 15px 40px;
+  text-align: center;
+  align:center;
+}
+.btnimg {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .main-div, .loggedin-div{
   width: 20%;
   margin: 0px auto;
