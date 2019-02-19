@@ -4,6 +4,7 @@
 
   <title>Login</title>
   <link rel="stylesheet" href="css/other.css" />
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
 
   <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
 
@@ -32,6 +33,11 @@
       Continue with Google
     </button>
 
+
+<div class="g-signin2" data-onsuccess="onSignIn"></div>
+
+
+
     <h4 align="center">or</h4>
 
     <button class="lightgray-btn rightbuttons" href="withemail.html" style="background: white;
@@ -45,13 +51,7 @@
 
   </div>
 
-  <div id="user_div" class="loggedin-div">
 
-    <h3 align="center">wekcine user</h3>
-    <p align="center" id="user_para">currently logged in</p>
-    <button align="center" onclick="logout()">logout</button>
-    <button id="verify_btn" align="center" onclick="send_verification()" style="margin-top: 20px">send verification</button>
-  </div>
 
   <script src="https://www.gstatic.com/firebasejs/5.8.0/firebase.js"></script>
   <script>

@@ -7,19 +7,24 @@
 
   <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
 
-  <div id="login_div" class="main-div" style="margin-top: 30px">
+  <div id="login_div" class="main-div" style="margin-top: 0px">
 
     <h1 align="center" style="margin-bottom: 20px; font-size: 45px">Sign up</h1>
 
 
 <a align="center" style="text-decoration:none; color: black" href="login.html">Already a member? You log in here</a>
-    <input align="center"
-    style="margin-top: 20px" type="email" placeholder="email...." id="email_field" />
+
+    <input align="center" style="margin-top: 20px" type="name" placeholder="first name...." id="firstname_field" />
+    <input align="center" style="margin-top: 20px" type="name" placeholder="last name...." id="lastname_field" />
+    <input align="center" style="margin-top: 20px" type="email" placeholder="email...." id="email_field" />
     <input align="center" type="password" placeholder="pasword...." id="password_field" />
+    <input align="center" type="password" placeholder="confirm password...." id="confirmpassword_field" />
 
 
 
-    <button align="center" style="margin-top: 20px"onclick="create_account()">Create Account</button>
+    <button align="center"
+    href="home.html"
+    style="margin-top: 20px"onclick="create_account()">Create Account</button>
 
 
 
@@ -27,12 +32,6 @@
 
   </div>
 
-  <div id="user_div" class="loggedin-div">
-
-    <h3 align="center">wekcine user</h3>
-    <p align="center" id="user_para">currently logged in</p>
-    <button align="center" onclick="logout()">logout</button>
-  </div>
 
   <script src="https://www.gstatic.com/firebasejs/5.8.0/firebase.js"></script>
   <script>

@@ -1,0 +1,46 @@
+<html>
+
+<head>
+
+  <title>Login</title>
+  <link rel="stylesheet" href="css/other.css" />
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+
+  <div id="login_div" class="main-div" style="margin-top: 00px">
+
+    <h1  id ="happy" align="center"style="margin-bottom: 10px; font-size: 45px;
+    margin-top: 0px">User Information</h1>
+
+    <form>
+      First name: <input type="text" id="fname" name="fname">
+      Last name: <input type="text" name="lname">
+      Email: <input type="text" name="email">
+      Password: <input type="text" name="password">
+      <input type="submit" value="Save">
+      <button align="center" onclick="logout()">logout</button>
+
+    </form>
+
+  </div>
+
+
+  <script src="https://www.gstatic.com/firebasejs/5.8.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyDFWYRchhqkCT53L1Y0QaG7PLr2vh4wG38",
+      authDomain: "accuracyaccounting.firebaseapp.com",
+      databaseURL: "https://accuracyaccounting.firebaseio.com",
+      projectId: "accuracyaccounting",
+      storageBucket: "accuracyaccounting.appspot.com",
+      messagingSenderId: "164309738212"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script src="userinfo.js"></script>
+</head>
+
+
+</html>
