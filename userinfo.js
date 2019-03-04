@@ -2,21 +2,16 @@
 
 var user = firebase.auth().currentUser;
 
+var f1  = firebase.database().ref().child("Users").child("apple");
+var happy = document.getElementById("happy");
+f1.on('value',function(datasnapshot)){
+  happy.innerHTML = "oigeroig";
+}
+
+
 
 
 function logout() {
     firebase.auth().signOut();
 
   }
-
-firebase.auth().onAuthStateChanged(function(user) {
-    if (user) {
-      // User is signed in.
-
-
-
-    } else {
-        window.alert("Successfully logged out!")
-        window.open("home.html", "_self");
-    }
-  });
