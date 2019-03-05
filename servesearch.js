@@ -3,7 +3,7 @@ function myFunction() {
   var input, filter, ul, li, a, i, txtValue;
   input = document.getElementById('searchinput');
   filter = input.value.toUpperCase();
-
+  li = ['apple','orange','grape']
 
   // Loop through all list items, and hide those who don't match the search query
   for (i = 0; i < li.length; i++) {
