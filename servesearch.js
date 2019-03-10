@@ -1,3 +1,5 @@
+//function to take the input of the search engine and search through the service options
+
 function myFunction() {
   // Declare variables
   var input, filter, ul, li, a, i, txtValue;
