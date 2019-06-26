@@ -100,7 +100,7 @@ function gmail_login() {
     window.alert(user.displayName + " rgherikng");
 
     var email_verified = user.emailVerified;
-    firebaseRef.child("Users").child(user.uid).child("FirstName").set(firstName);
+  //  firebaseRef.child("Users").child(user.uid).child("FirstName").set(firstName);
     //firebaseRef.child("Users").child(user.uid).child("LastName").set(lastName);
     //firebaseRef.child("Users").child(user.uid).child("Email").set(userEmail);
     //firebaseRef.child("Users").child(user.uid).child("Password").set(userPass);

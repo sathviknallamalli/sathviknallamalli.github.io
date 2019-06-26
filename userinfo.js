@@ -22,5 +22,5 @@ return firebase.database().ref('/Users/' + userId).once('value').then(function(s
 //logout function to exit firebase
 function logout() {
     firebase.auth().signOut();
-
+  window.open("home.html", "_self");
   }
