@@ -97,12 +97,14 @@ function gmail_login() {
 
     var firebaseRef = firebase.database().ref();
 
+    window.alert(user.displayName + " rgherikng");
+
     var email_verified = user.emailVerified;
     firebaseRef.child("Users").child(user.uid).child("FirstName").set(firstName);
-    firebaseRef.child("Users").child(user.uid).child("LastName").set(lastName);
-    firebaseRef.child("Users").child(user.uid).child("Email").set(userEmail);
-    firebaseRef.child("Users").child(user.uid).child("Password").set(userPass);
-    firebaseRef.child("Users").child(user.uid).child("Verified").set(email_verified);
+    //firebaseRef.child("Users").child(user.uid).child("LastName").set(lastName);
+    //firebaseRef.child("Users").child(user.uid).child("Email").set(userEmail);
+    //firebaseRef.child("Users").child(user.uid).child("Password").set(userPass);
+    //firebaseRef.child("Users").child(user.uid).child("Verified").set(email_verified);
 
 
     window.open("home.html", "_self");
@@ -133,7 +135,7 @@ function facebook_login() {
     // The signed-in user info.
     var user = result.user;
 
-    window.alert("login with f " + user.email);
+    window.open("home.html", "_self");
     // ...
   }).catch(function(error) {
     // Handle Errors here.
