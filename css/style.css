@@ -10,6 +10,11 @@ body{
 
 }
 
+.bar_container{
+    width: 50%;
+    margin: 0px auto;
+    margin-top: 20px;
+}
 
 .cs-loader{
   position: absolute;

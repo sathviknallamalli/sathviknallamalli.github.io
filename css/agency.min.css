@@ -16,6 +16,11 @@ a {
   color: #4A5EA1
 }
 
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
 /* Add a black background color to the top navigation bar */
 .topnav {
   overflow: hidden;
